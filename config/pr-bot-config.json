@@ -1,0 +1,40 @@
+{
+    "rules": [
+      {
+        "id": "checkTitle",
+        "description": "PR title must not be empty",
+        "type": "required",
+        "field": "title",
+        "errorMessage": "❌ PR title is missing. Please provide a descriptive title."
+      },
+      {
+        "id": "checkDescription",
+        "description": "Encourage adding a PR description",
+        "type": "recommended",
+        "field": "body",
+        "errorMessage": "⚠️ PR description is missing. Consider adding a description."
+      },
+      {
+        "id": "checkSecurity",
+        "description": "Run security audit",
+        "type": "command",
+        "command": "npm audit --json",
+        "errorMessage": "❌ Security vulnerabilities detected. Please run `npm audit fix`."
+      },
+      {
+        "id": "checkLint",
+        "description": "Run linting check",
+        "type": "command",
+        "command": "npm run lint",
+        "errorMessage": "❌ Linting errors detected. Please run `npm run lint` and fix them."
+      },
+      {
+        "id": "checkFormat",
+        "description": "Run formatting check",
+        "type": "command",
+        "command": "npm run format",
+        "errorMessage": "❌ Formatting issues detected. Please run `npm run format`."
+      }
+    ]
+  }
+  
