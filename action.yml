@@ -16,7 +16,7 @@ inputs:
 
 runs:
   using: "node16"
-  main: "src/index.js"
+  main: "src/index.mjs"
 
 outputs:
   review_result:
