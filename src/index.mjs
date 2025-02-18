@@ -1,8 +1,9 @@
-// pr-review-bot.js
-const { Octokit } = require("@octokit/rest");
-const { execSync } = require("child_process");
-const fs = require("fs");
-require("dotenv").config();
+import { Octokit } from "@octokit/rest";  // ES Module import
+import { execSync } from "child_process";
+import fs from "fs";  // Use import for fs as well
+import dotenv from "dotenv";  // Use import for dotenv
+
+dotenv.config();
 
 const octokit = new Octokit({ auth: process.env.GITHUB_TOKEN });
 const [owner, repo] = process.env.GITHUB_REPOSITORY.split("/");
