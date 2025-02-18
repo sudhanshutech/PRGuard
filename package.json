@@ -1,0 +1,22 @@
+{
+  "name": "pr-review-bot",
+  "version": "1.0.0",
+  "description": "PR Review Bot is a GitHub Action that automatically reviews pull requests based on predefined and user-defined policy rules. It comes with built-in checks for PR title requirements, security audits, linting, and formatting validations. Users can also define additional custom policies.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sudhanshutech/PRGuard.git"
+  },
+  "author": "Sudhanshu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sudhanshutech/PRGuard/issues"
+  },
+  "homepage": "https://github.com/sudhanshutech/PRGuard#readme",
+  "dependencies": {
+    "@octokit/rest": "^21.1.1",
+    "fs": "^0.0.1-security"
+  }
+}
