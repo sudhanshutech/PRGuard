@@ -1,4 +1,4 @@
-name: "PR Review Bot"
+name: "PRGuard"
 description: "A policy-driven GitHub Action to review pull requests based on user-defined rules."
 author: "Your Name"
 branding:
