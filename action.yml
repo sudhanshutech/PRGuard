@@ -1,0 +1,23 @@
+name: "PR Review Bot"
+description: "A policy-driven GitHub Action to review pull requests based on user-defined rules."
+author: "Your Name"
+branding:
+  icon: "check-circle"
+  color: "blue"
+
+inputs:
+  github_token:
+    description: "GitHub token for authentication"
+    required: true
+  config_file:
+    description: "Path to the custom policy configuration file"
+    required: false
+    default: "config/pr-bot-config.json"
+
+runs:
+  using: "node16"
+  main: "src/index.js"
+
+outputs:
+  review_result:
+    description: "Result of the PR review process"
